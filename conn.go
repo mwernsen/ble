@@ -40,5 +40,5 @@ type Conn interface {
 	Disconnected() <-chan struct{}
 
 	// PUpdate the connection parameters
-	Update(min uint16, max uint16)
+	Update(min uint16, max uint16, timeout uint16) error
 }
